@@ -80,7 +80,7 @@
   }
 
   header{
-    background-color: rgba(29, 29, 29, .6);
+    background-color: rgba(29, 29, 29, .7);
     backdrop-filter: blur(8px);
     color: #E7E9ED;
   }

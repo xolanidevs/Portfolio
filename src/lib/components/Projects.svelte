@@ -21,7 +21,7 @@
   ];
 </script>
 
-<section class="container"  aria-labelledby="featured-projects-heading">
+<section id="projects" class="container"  aria-labelledby="featured-projects-heading">
   <h2 id="featured-projects-heading">FEATURED</h2>
   <div class="projects-grid">
     {#each projects as project}
@@ -45,67 +45,96 @@
 
 <style>
 
-  #featured-projects-heading{
-    color: var(--text);
-    margin-bottom: 1rem;
-    font-size: 1.7rem;
+section {
+  overflow: hidden;
+  /* padding: 1rem; */}
+
+#featured-projects-heading {
+  color: var(--text);
+  margin-bottom: 1rem;
+  font-size: 1.5rem; 
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 1rem; 
+}
+
+.project-card {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.title, .category, .description {
+  margin-top: 0.5rem; 
+}
+
+.title {
+  color: var(--text);
+}
+
+.category {
+  font-size: 0.8rem;
+  color: var(--secondary);
+}
+
+.description {
+  color: #333;
+}
+
+.techstack {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tech-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--accent);
+  color: var(--background);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Tablet and Larger Screens */
+@media (min-width: 600px){
+  #featured-projects-heading {
+    font-size: 1.7rem; 
   }
 
   .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 2rem;
   }
 
-  .project-card {
-    background-color: #f0f0f0;
-    padding: 1rem;
-    border-radius: 8px;
+  .title, .category, .description {
+    margin-top: 0.8rem; 
+  }
+}
+
+
+@media (min-width: 1024px) {
+  #featured-projects-heading {
+    font-size: 2rem; 
   }
 
-  .project-card img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px 8px 0 0;
-  }
+}
 
-  .title, .category, .description{
-    margin-top: .8REM;
-  }
-
-  .title{
-    color: var(--text);
-  }
-
-  .category {
-    font-size: 0.8rem;
-    color: var(--secondary);
-  }
-
-  .description{
-    color: #333;
-  }
-
-  .techstack {
-    display: flex;
-    gap: 0.5rem;
-    margin: 1rem 0;
-  }
-
-  .tech-icon {
-    width: 20px;
-    height: 20px;
-    background-color: #333;
-    border-radius: 50%;
-  }
-
-  .cta-button {
-    display: inline-block;
-    background-color: var(--accent);
-    color: var(--background);
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 4px;
-  }
 </style>
