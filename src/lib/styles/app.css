@@ -1,0 +1,51 @@
+:root{
+  /* Color */
+  --background: #cbd5e1;
+  --primary: #175ccc;
+  --secondary: #6C757D;
+  --text: #1d1d1d;
+  --text-secondary:#8D8D8D;
+  --accent: #3498db;
+}
+
+*{
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background: var(--background);
+  color: var(--clr-text);
+}
+
+image,
+video,
+picture,
+canvas,
+svg{
+  user-select: none;
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
