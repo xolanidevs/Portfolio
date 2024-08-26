@@ -79,10 +79,15 @@
     z-index: 1000;
   }
 
-  header, .mobile-menu{
-    background-color: rgba(29, 29, 29, .8);
-    backdrop-filter: blur(10px);
+  header{
+    background-color: rgba(29, 29, 29, .6);
+    backdrop-filter: blur(8px);
     color: #E7E9ED;
+  }
+  
+  .mobile-menu{
+    background-color: rgba(29, 29, 29, .9);
+
   }
 
   nav{
@@ -129,8 +134,6 @@
   .mobile-menu.open,  .mobile-menu-container {
     display: block;
   }
-
-
 
   .menu-toggle {
     font-size: .8rem;

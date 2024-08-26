@@ -4,6 +4,7 @@
   import '$lib/styles/morden-normalize.css';
   import '$lib/styles/utils.css';
   import Hero from '$lib/components/Hero.svelte';
+  import About from '$lib/components/About.svelte';
   // import About from './components/About.svelte';
   // import Projects from './components/Projects.svelte';
   // import Contact from './components/Contact.svelte';
@@ -13,7 +14,7 @@
 
 
   <Hero />
-  <!-- <About /> -->
+  <About />
   <!-- <Projects /> -->
   <!-- <Contact /> -->
 
