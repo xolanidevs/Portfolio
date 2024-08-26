@@ -68,7 +68,7 @@
 <style>
   header{
     width: 80%;
-    height: 13vh;
+    height: 11vh;
     padding: 1rem 2rem;
     border-radius: 20px;
     position: fixed;
