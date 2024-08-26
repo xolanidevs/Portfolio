@@ -42,9 +42,9 @@
 
 <style>
   section{
-    /* height: 100vh; */
+    height: 100vh;
     display: flex;
-    margin-top: calc(6rem + 3rem);
+    margin-top: calc(9rem + 3rem);
     position: relative;
   }
     
@@ -61,7 +61,7 @@
   }
   
   #hero-heading {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--text);
   }
 
@@ -146,8 +146,6 @@
   }
 
   
-
-
   @keyframes pulse {
     0% {
       transform: scale(1);
@@ -159,4 +157,100 @@
       transform: scale(1);
     }
   }
+
+  @media(min-width:425px){
+    section{
+      margin-top: 12rem;
+    }
+
+    .hero-content {
+      gap: 2rem;
+  }
+
+  #hero-heading {
+    font-size: 1.9rem;
+  }
+
+}  
+
+@media (min-width:640px) and (max-width:767px) {
+  .hero-content {
+    gap: 2rem;
+  }
+
+  #hero-heading {
+    font-size: 2rem;
+  }
+
+  .cta {
+    padding: .3rem 1.5rem;
+  }
+}  
+
+@media (min-width:768px){
+
+  section{
+    margin-top: 10rem;
+  }
+
+  .hero-content {
+    gap: 2.5rem;
+  }
+
+  #hero-heading {
+    font-size: 3rem;
+  }
+
+  .cta {
+    padding: .8rem 2rem;
+  }
+
+  .cta i{
+    font-size: 1.4rem;
+    padding-left: 1.2rem;
+  }
+
+  .icon {
+    font-size: 35px;
+  }
+
+  .icon-circle{
+    top: 10%;;
+  }
+} 
+
+@media (min-width:1440px){
+
+  
+  section{
+    margin-top: 11rem;
+  }
+
+  .hero-content {
+    gap: 2.5rem;
+  }
+
+  #hero-heading {
+    font-size: 4rem;
+  }
+
+  .cta {
+    padding: .7rem 1.5rem;
+  }
+
+  .cta i{
+    font-size: 1.3rem;
+    padding-left: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .icon {
+    font-size: 40px;
+  }
+
+}
+
+
+
 </style>
