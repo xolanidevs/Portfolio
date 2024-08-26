@@ -11,13 +11,13 @@
 </script>
 
 <head>
-  <meta>
+  <meta name="description" content="Xolani Mthembu: Front-End Web Developer & UX Designer based in Gauteng. Crafting engaging, user-friendly web experiences with cutting-edge technology.">
 </head>
 
 <section class="container" aria-labelledby="hero-heading">
-  <div class="icon-circle" aria-label="Skills icons">
+  <div class="icon-circle" >
     {#each icons as icon}
-      <i class={icon.class} aria-label={icon.label}></i>
+      <i class={icon.class} ></i>
     {/each}
   </div>
   <div class="hero-content">
@@ -42,7 +42,7 @@
 
 <style>
   section{
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     margin-top: calc(9rem + 3rem);
     position: relative;

@@ -5,16 +5,14 @@
   import '$lib/styles/utils.css';
   import Hero from '$lib/components/Hero.svelte';
   import About from '$lib/components/About.svelte';
-  // import About from './components/About.svelte';
-  // import Projects from './components/Projects.svelte';
-  // import Contact from './components/Contact.svelte';
-  // import Footer from './components/Footer.svelte';
+  import Projects from '$lib/components/Projects.svelte';
+
 </script>
 
 
 
   <Hero />
   <About />
-  <!-- <Projects /> -->
+  <Projects />
   <!-- <Contact /> -->
 
