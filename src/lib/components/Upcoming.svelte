@@ -32,9 +32,7 @@
     border-radius: 20px;
     overflow: hidden;
     background-color: var(--text);
-    padding: 3rem;
-    
-    border-radius: 30px;
+    padding: 1rem;
   }
 
   video {
@@ -42,8 +40,6 @@
     height: auto;
     object-fit: cover;
   }
-
-
 
   /* Tablet and larger screens */
   @media (min-width: 600px) {
@@ -57,9 +53,13 @@
 
   }
 
-  @media (min-width:1024){
+  @media (min-width:1024px){
     #upcoming-projects-heading{
-    font-size: 2.2rem;
-  }
+      font-size: 2.2rem;
+    }
+
+    .video-container{
+      padding: 2rem 3rem;
+    }
   }
 </style>
