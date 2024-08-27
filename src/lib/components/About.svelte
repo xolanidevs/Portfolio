@@ -1,14 +1,17 @@
 <script>
   let techStack = ["HTML5", "CSS3", "React"];
-  let tools = ["Figma", "Git", "GitHub", "Trello", "VS Code"];
+  let tools = ["Figma", "Git", "GitHub", "Trello", "Webflow"];
 </script>
 
 <section id="about" class="container" aria-labelledby="about-title">
   <h2 id="about-title" class="title">About</h2>
   <div class="about__container">
-    <h3 class="subtitle">In A Glimse</h3>
+    <h3 class="subtitle">In A Glimpse</h3>
     <p class="description">
-      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature.
+      I'm a front-end web developer with a passion for building websites that are not only easy on the eye but also work seamlessly for everyone. I believe the web should be a welcoming place for all - yes, even for your grandma who still uses Internet Explorer (bless her heart). <br><br>
+      But here's the thing: The tech industry evolves in a blink of an eye. This why I'm always hungry to learn, staying on top of the latest industry trends and best practices. This means your website won't just be great today – it'll be ready for whatever the future of the web throws our way.
+      <br><br>
+      Otherwise, when I'm not not making the internet a better place one code at a time, I'm indulging in a hot cup of tea (one cup at a time).
     </p>
     <h3 class="subtitle">Techstack</h3>
     <ul class="tech-list" aria-label="Technology stack">
@@ -38,6 +41,7 @@
   .title{
     font-size: 1.7rem;
     color: var(--text);
+    margin-bottom: 1rem;
   }
 
   .about__container{
@@ -68,7 +72,7 @@
     flex-wrap: wrap;
     gap: 1.5rem;
     padding: 0;
-    
+    justify-content: center;
   }
 
   .tech-list li{
@@ -108,6 +112,13 @@
 
     .subtitle {
       font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width:1024px){
+    .description{
+      max-width: 70ch;
+      font-size: 1.1rem;
     }
   }
 

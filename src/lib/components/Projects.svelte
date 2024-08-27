@@ -1,11 +1,10 @@
 <script>
 
-
   const projects = [
     {
       title: "Vhutomi Projects",
       category: "CONSTRUCTION",
-      description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution",
+      description: "Vhutomi Projects PTY LTD is a full-service construction company that goes beyond traditional building. They service all aspects of construction while offering specialized expertise in epoxy flooring and logistics solutions. ",
       techstack: ["HTML", "CSS", "JavaScript", "React", "Node.js"],
       image: "/images/VP.png",
       link: "https://vhutomi-projects.vercel.app/"
@@ -13,12 +12,13 @@
     {
       title: "JukulynsFinest",
       category: "MULTI-MEDIA PRODUCTION",
-      description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
+      description: "Jukulyn's Finest was initially formed as a content creation group. They are now expanding their services to multimedia production, specializing in full event production and media production.",
       techstack: ["Photoshop", "Illustrator", "Premier Pro", "After Effects", "Audition"],
       image: "/images/JF.png",
       link: "https://jukulyns-finest.vercel.app/"
     }
   ];
+
 </script>
 
 <section id="projects" class="container"  aria-labelledby="featured-projects-heading">
@@ -36,7 +36,8 @@
           {/each}
         </div>
         <a href={project.link} target="_blank" class="cta-button" rel="noopener noreferrer">
-            VISIT
+          <i class="fa fa-globe" aria-hidden="true"></i>
+           Visit the site 
         </a>
       </article>
     {/each}
