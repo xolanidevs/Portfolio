@@ -67,7 +67,7 @@
 
 <style>
   header{
-    width: 80%;
+    width: 90%;
     height: 11vh;
     padding: 1rem 2rem;
     border-radius: 20px;
@@ -80,9 +80,10 @@
   }
 
   header{
-    background-color: rgba(29, 29, 29, .7);
+    background-color: rgba(55, 55, 55, .6);
     backdrop-filter: blur(8px);
     color: #E7E9ED;
+
   }
   
   .mobile-menu{
@@ -185,6 +186,12 @@
   }
 
   @media (min-width:780px) {
+    
+
+    header{
+      width: 85%;
+    }
+
     .mobile-menu-container {
       display: none;
     }
