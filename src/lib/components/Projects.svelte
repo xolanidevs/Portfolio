@@ -63,7 +63,7 @@ section {
 }
 
 .project-card {
-  background-color: #f0f0f0;
+  background-color: var(--text);
   padding: 1rem;
   border-radius: 8px;
 }
@@ -80,7 +80,7 @@ section {
 }
 
 .title {
-  color: var(--text);
+  color: var(--background);
 }
 
 .category {
@@ -89,7 +89,7 @@ section {
 }
 
 .description {
-  color: #333;
+  color: var(--text-secondary);
 }
 
 .techstack {

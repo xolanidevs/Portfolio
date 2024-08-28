@@ -45,9 +45,8 @@
   }
 
   .about__container{
-    background: var(--text);
-    color: var(--text-secondary);
-    padding: 2rem 2.5rem;
+ 
+    color: var(--text-);
     border-radius: 30px;
     margin-top: 1rem;
     display: flex;
@@ -57,7 +56,7 @@
   }
   
   .subtitle{
-    color: var(--background);
+    color: var(--secondary);
     text-align: center;
     font-size: 1.2rem;
   }
@@ -83,7 +82,7 @@
   }
 
   .tech-list i{
-    color: var(--accent);
+    color: var(--primary);
   }
 
   .svelte{
