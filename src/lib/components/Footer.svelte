@@ -2,8 +2,8 @@
   const currentYear = new Date().getFullYear();
   
   const socialLinks = [
-    { name: 'Linkedin', icon: 'fab fa-linkedin', url: 'https://www.linkedin.com/in/', ariaLabel: 'Contact me on my LinkedIn page' },
     { name: 'Twitter', icon: 'fab fa-twitter', url: 'https://x.com/_XolaniMthembu', ariaLabel: 'Contact me on Twitter' },
+    { name: 'Linkedin', icon: 'fab fa-linkedin', url: 'https://www.linkedin.com/in/', ariaLabel: 'Contact me on my LinkedIn page' },
     { name: 'Instagram', icon: 'fab fa-instagram', url: 'https://instagram.com/_xolanimthembu', ariaLabel: 'Check out my Instagram' }
   ];
 
@@ -54,6 +54,7 @@
     background-color: #333;
     color: white;
     padding: 2rem 1rem;
+    margin-top: 2rem;
   }
 
   .footer-content {

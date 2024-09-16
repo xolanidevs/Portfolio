@@ -1,121 +1,4 @@
 <!-- <script>
-  const contactDetails = [
-    { title: "Email",
-      value: "xmthembu412@gmail.com",
-      icon: "fa-solid fa-inbox"
-    },
-    {
-      title: "Phone",
-      value: "+27 81 710 9252",
-      icon: "fa-solid fa-phone"
-    },
-    {
-      title: "Instagram",
-      icon: "fa-brands fa-instagram",
-      value: ""
-    },
-    {
-      title: "WhatsApp",
-      icon: "fa-brands fa-whatsapp",
-      value: ""
-    }
-  ];
-</script>
-
-<section class="container">
-  <h2>
-    Ready to start your own project?
-  </h2>
-  <div class="wrapper">
-    <div class="contact-details">  
-      <div class="group">
-        {#each contactDetails as details }
-          <i class="{details.icon}"></i>
-          <p class="subtitle">{details.title}:</p>
-          <p>{details.value}</p>
-        {/each}
-      </div>
-
-    </div>
-    <div class="contact-form">
-      <form action="">
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required>
-
-        <label for="phone">Phone:</label>
-        <input type="tel" name="phone" id="phone">
-
-        <label for="message">Message:</label>
-        <textarea name="message" id="message" rows="4" placeholder="Type your message"></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  </div>
-</section>
-
-<style>
-
-  .wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .contact-details{
-    border: 1px dotted var(--primary);
-    padding: 2rem 3rem;
-  }
-
-  .group{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  
-  }
-
-  form{
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-  }
-
-  input, textarea{
-    background: none;
-    border: none;
-    width: 25rem;
-  }
-
-  input,textarea{
-    border-bottom: 1px solid var(--text);
-  }
-
-  input{
-    padding: 1rem;
-  }
-
-  
-
-
-  button{
-    margin-top: 1rem;
-    background: var(--primary);
-    padding: 1rem 2rem;
-    border-radius: 15px;
-    color: var(--background);
-    margin-left: auto; 
-    margin-right: auto; 
-  }
-  
-
-  .subtitle{
-    display: inline;
-  }
-</style> -->
-
-<script>
 let name = '';
 let phone = '';
 let email = '';
@@ -313,4 +196,85 @@ function handleSubmit() {
       width: 55%;
     }
   }
-</style>
+</style> -->
+
+<script>
+  const contactDetails = [
+    {name:"+27 81 710 9252", icon:"phone", fa:"solid", href:"tel:+27817109252", ariaLabel:"Call us at +27 81 710 9252"},
+    {name:"xmthembu@gmail.com", icon:"envelope", fa:"solid", href:"mailto:xmthembu412@gmail.com", ariaLabel:"Email us at xmthembu412@gmail.com"},
+    {name:"WhatsApp", icon:"whatsapp", fa:"brands", href:"https://wa.me/27817109252", ariaLabel:"Contact us on WhatsApp", rel:"noopener noreferrer"},
+    {name:"Instagram", icon:"instagram", fa:"brands", href:"https://www.instagram.com/_xolanimthembu/", ariaLabel:"Follow us on Instagram", rel:"noopener noreferrer"}
+  ]
+  </script>
+  
+  <section class="container">
+    <h1>Get In Touch</h1>
+    <div class="wrapper">
+      {#each contactDetails as contact }
+        <a 
+          href="{contact.href}" 
+          class="contact-button" 
+          aria-label="{contact.ariaLabel}"
+          rel="{contact.rel || ''}"
+        >
+          <i class="fa-{contact.fa} fa-{contact.icon}" aria-hidden="true"></i>
+          <span>{contact.name}</span>
+        </a>
+      {/each}
+    </div>
+  </section>
+
+    <style>
+      h1{
+        color: var(--text);
+        margin-bottom: 2rem;
+        font-size: 1.7rem;
+      }
+
+      .wrapper {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-between;
+    
+      }
+    
+      .contact-button {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        border: 1px solid var(--secondary);
+        color: var(--primary);
+        text-decoration: none;
+        border-radius: 25px;
+        font-size: 18px;
+        transition: background-color 0.3s ease, padding-right .3s ease;
+      }
+    
+      .contact-button:hover,
+      .contact-button:focus {
+        background-color: rgba(255, 255, 255, 0.3);
+        padding-right: 40px;
+        outline: none;
+      }
+    
+      .contact-button:focus {
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+      }
+    
+      .contact-button :global(i) {
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+      }
+
+      @media (max-width:768px){
+        h1{
+          font-size: 1.5rem;
+        }
+
+        .wrapper{
+          flex-direction: column;
+          gap: 2rem;
+        }
+      }
+    </style>
