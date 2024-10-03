@@ -72,22 +72,31 @@
     min-width: fit-content;
     padding: .2rem 1rem;
     border-radius: 10px;
-    background: var(--primary);
+    /* border: none;
+    background: var(--primary); */
+    border: 1px solid var(--primary);
+    background: none;
     overflow: hidden; 
     font-size: 1em;
-    transition: animation 0.3s ease;
+    transition: border 0.3s ease, background .3s ease;
   }
 
-  .cta:hover {
-    animation: pulse 1s ease infinite;
-  }
+  /* .cta:hover{
+    border: 1px solid var(--primary);
+    background: none;
+  } */
 
   .cta i {
     position: relative;
     z-index: 1; 
-    color: #E7E9ED;
+    /* color: #E7E9ED; */
+    color: var(--primary);
     padding-right: 1rem;
+    transition: transform .3s;
+  }
 
+  .cta i:hover{
+    transform: translateY(-3px);
   }
     
   .icon-circle {
@@ -145,18 +154,6 @@
     animation: spin 10s linear infinite; 
   }
 
-  
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.05);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
 
   @media(min-width:425px){
     section{

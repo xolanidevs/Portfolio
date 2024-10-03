@@ -22,6 +22,7 @@
   let navItems = [
     { href: "#about", text: "ABOUT" },
     { href: "#projects", text: "PROJECTS" },
+    { href: "#blog", text: "BLOG" },
     { href: "#contact", text: "CONTACT" }
   ];
 </script>
@@ -67,28 +68,27 @@
 
 <style>
   header{
-    width: 90%;
+    width: 100%;
     height: 11vh;
     padding: 1rem 2rem;
-    border-radius: 20px;
     position: fixed;
-    margin-top: 2rem;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
-  }
-
-  header{
-    background-color: rgba(55, 55, 55, .6);
+    background-color: var(--background);
     backdrop-filter: blur(8px);
-    color: #E7E9ED;
-
+    border-bottom: 1px dashed var(--text);
+    color: var(--primary);
   }
-  
+
   .mobile-menu{
     background-color: rgba(29, 29, 29, .9);
+    backdrop-filter: blur(8px);
+  }
 
+  .mobile-menu a{
+    color: #fff;
   }
 
   nav{
@@ -112,10 +112,16 @@
   .header-icons i{
     font-size: .7rem;
     padding-left: .1rem;
+    color: var(--primary);
+    transition: transform .3s;
+  }
+
+  .header-icons i:hover{
+    transform: translateY(-3px);
   }
 
   a{
-    color: #D9D9D9;
+    color: var(--text);
   }
 
   li a{
@@ -186,12 +192,6 @@
   }
 
   @media (min-width:780px) {
-    
-
-    header{
-      width: 85%;
-    }
-
     .mobile-menu-container {
       display: none;
     }

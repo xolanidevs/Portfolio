@@ -23,7 +23,7 @@
 
   #upcoming-projects-heading{
     font-size: 1.7rem;
-    color: var(--text);
+    color: var(--secondary);
     margin-bottom: 1rem;
   }
 

@@ -4,7 +4,6 @@
 </script>
 
 <section id="about" class="container" aria-labelledby="about-title">
-  <h2 id="about-title" class="title">About</h2>
   <div class="about__container">
     <h3 class="subtitle">In A Glimpse</h3>
     <p class="description">
@@ -38,12 +37,6 @@
 </section>
 
 <style>
-  .title{
-    font-size: 1.7rem;
-    color: var(--text);
-    margin-bottom: 1rem;
-  }
-
   .about__container{
  
     color: var(--text-);
@@ -100,9 +93,6 @@
   }
 
   @media (min-width: 768px) {
-    .title {
-      font-size: 2.2rem;
-    }
 
     .about__container {
       padding: 2rem 2.5rem;

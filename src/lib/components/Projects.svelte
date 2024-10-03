@@ -51,7 +51,7 @@ section {
   /* padding: 1rem; */}
 
 #featured-projects-heading {
-  color: var(--text);
+  color: var(--secondary);
   margin-bottom: 1rem;
   font-size: 1.5rem; 
 }

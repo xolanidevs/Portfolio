@@ -201,7 +201,7 @@ function handleSubmit() {
 <script>
   const contactDetails = [
     {name:"+27 81 710 9252", icon:"phone", fa:"solid", href:"tel:+27817109252", ariaLabel:"Call us at +27 81 710 9252"},
-    {name:"xmthembu@gmail.com", icon:"envelope", fa:"solid", href:"mailto:xmthembu412@gmail.com", ariaLabel:"Email us at xmthembu412@gmail.com"},
+    {name:"xmthembu412@gmail.com", icon:"envelope", fa:"solid", href:"mailto:xmthembu412@gmail.com", ariaLabel:"Email us at xmthembu412@gmail.com"},
     {name:"WhatsApp", icon:"whatsapp", fa:"brands", href:"https://wa.me/27817109252", ariaLabel:"Contact us on WhatsApp", rel:"noopener noreferrer"},
     {name:"Instagram", icon:"instagram", fa:"brands", href:"https://www.instagram.com/_xolanimthembu/", ariaLabel:"Follow us on Instagram", rel:"noopener noreferrer"}
   ]
@@ -253,7 +253,7 @@ function handleSubmit() {
       .contact-button:hover,
       .contact-button:focus {
         background-color: rgba(255, 255, 255, 0.3);
-        padding-right: 40px;
+        padding-right: 4  bn 0px;
         outline: none;
       }
     
