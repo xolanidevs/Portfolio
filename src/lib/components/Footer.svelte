@@ -7,11 +7,11 @@
     { name: 'Instagram', icon: 'fab fa-instagram', url: 'https://instagram.com/_xolanimthembu', ariaLabel: 'Check out my Instagram' }
   ];
 
-  const navItems = [
-    { name: 'Home', url: '/' },
-    { name: 'About', url: 'about' },
-    { name: 'Projects', url: 'ptojects' },
-  ];
+  // const navItems = [
+  //   { name: 'Home', url: '/' },
+  //   { name: 'About', url: 'about' },
+  //   { name: 'Projects', url: 'ptojects' },
+  // ];
 </script>
 
 <footer role="contentinfo">
@@ -23,7 +23,7 @@
       </p>
     </div>
     
-    <div class="footer-section">
+    <!-- <div class="footer-section">
       <nav aria-label="Footer Navigation">
         <ul>
           {#each navItems as item}
@@ -31,7 +31,7 @@
           {/each}
         </ul>
       </nav>
-    </div>
+    </div> -->
     
     <div class="footer-section">
       <h2 class="visually-hidden">Social Media Links</h2>
@@ -51,9 +51,9 @@
 
 <style>
   footer {
-    background-color: #333;
-    color: white;
+    color:var(--text);
     padding: 2rem 1rem;
+    border-top: 1px dotted var(--text) ;
     margin-top: 2rem;
   }
 
@@ -88,7 +88,7 @@
   }
 
   a {
-    color: white;
+    color: var(--text);
     text-decoration: none;
   }
 
@@ -99,6 +99,15 @@
 
   .social-links a {
     font-size: 1.5rem;
+  }
+  
+  .social-links li{
+    transition: transform .3s;
+
+  }
+
+  .social-links li:hover{
+    transform: translateY(-3px);
   }
 
   .visually-hidden {

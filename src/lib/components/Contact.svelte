@@ -267,7 +267,7 @@ function handleSubmit() {
         height: 20px;
       }
 
-      @media (max-width:768px){
+      @media (max-width:900px){
         h1{
           font-size: 1.5rem;
         }
