@@ -1,7 +1,7 @@
 <script>
   /**
-	 * @type {boolean}
-	 */
+   * @type {boolean}
+   */
   let isMenuOpen;
 
   // /Burger menu
@@ -15,14 +15,13 @@
       // @ts-ignore
       mobileMenu.classList.remove('open');
     }
-}
-
+  }
 
   // Nav-links
   let navItems = [
     { href: "#about", text: "ABOUT" },
     { href: "#projects", text: "PROJECTS" },
-    { href: "#blog", text: "BLOG" },
+    { href: "https://xolanimthembu.blogspot.com/2024/10/introduction-content-you-should-expect.html", target:"_blank", text: "BLOG" },
     { href: "#contact", text: "CONTACT" }
   ];
 </script>
@@ -36,10 +35,9 @@
     </div>
 
     <!-- Desktop menu -->
-
     <ul class="nav-menu desktop-menu">
       {#each navItems as item}
-        <li><a href={item.href}>{item.text}</a></li>
+        <li><a href={item.href} target={item.target || null} rel={item.target ? "noopener noreferrer" : null}>{item.text}</a></li>
       {/each}
     </ul>
 
@@ -59,7 +57,7 @@
       </button>
       <ul class="mobile-menu" class:open={isMenuOpen}>
         {#each navItems as item}    
-          <li class="mobile-link"><a href={item.href}>{item.text}</a></li>
+          <li class="mobile-link"><a href={item.href} target={item.target || null} rel={item.target ? "noopener noreferrer" : null}>{item.text}</a></li>
         {/each}
       </ul>
     </div>

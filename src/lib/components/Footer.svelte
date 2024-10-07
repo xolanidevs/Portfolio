@@ -55,6 +55,7 @@
     padding: 2rem 1rem;
     border-top: 1px dotted var(--text) ;
     margin-top: 2rem;
+    overflow: hidden;
   }
 
   .footer-content {
