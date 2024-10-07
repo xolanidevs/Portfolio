@@ -8,7 +8,7 @@
     <h3 class="subtitle">In A Glimpse</h3>
     <p class="description">
       I'm a front-end web developer with a passion for building websites that are not only easy on the eye but also work seamlessly for everyone. I believe the web should be a welcoming place for all - yes, even for your grandma who still uses Internet Explorer (bless her heart). <br><br>
-      But here's the thing: The tech industry evolves in a blink of an eye. This why I'm always hungry to learn, staying on top of the latest industry trends and best practices. This means your website won't just be great today – it'll be ready for whatever the future of the web throws our way.
+      But here's the thing: The tech industry evolves in a blink of an eye. This why I'm always eager to learn, staying on top of the latest industry trends and best practices. This means your website won't just be great today – it'll be ready for whatever the future of the web throws our way.
       <br><br>
       Otherwise, when I'm not not making the internet a better place one code at a time, I'm indulging in a hot cup of tea (one cup at a time).
     </p>
