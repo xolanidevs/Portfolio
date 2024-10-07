@@ -36,6 +36,9 @@
       <a href="https://github.com/xolanidevs" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
         <i class="fab fa-github" aria-hidden="true"></i>
       </a>
+      <a href="https://xolanimthembu.blogspot.com/" target="_blank" rel="noopener noreferrer" aria-label="blogspot profile">
+        <i class="fa-brands fa-blogger" aria-hidden="true"></i>
+      </a>
     </div>
   </div>
 </section>
