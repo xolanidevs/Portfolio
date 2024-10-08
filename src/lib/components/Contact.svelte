@@ -207,7 +207,7 @@ function handleSubmit() {
   ]
   </script>
   
-  <section class="container">
+  <section id="contact" class="container">
     <h1>Get In Touch</h1>
     <div class="wrapper">
       {#each contactDetails as contact }

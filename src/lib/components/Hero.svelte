@@ -23,7 +23,7 @@
   <div class="hero-content">
     <div class="hero-text">
       <h1 id="hero-heading">
-        Hey there, <br> I'm Xolani Mthembu. <br> A <strong>Front-End</strong> Web Developer & A <strong>UX Designer</strong> based in Gauteng.
+        Hey there, <br> I'm Xolani Mthembu. <br> A <strong>Front-End</strong> Developer & A <strong>UX Designer</strong> based in Gauteng.
       </h1>
     </div>
     <div class="cta">

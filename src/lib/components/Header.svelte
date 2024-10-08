@@ -22,7 +22,8 @@
     { href: "#about", text: "ABOUT" },
     { href: "#projects", text: "PROJECTS" },
     { href: "https://xolanimthembu.blogspot.com/2024/10/introduction-content-you-should-expect.html", target:"_blank", text: "BLOG" },
-    { href: "#contact", text: "CONTACT" }
+    { href: "#contact", text: "CONTACT" },
+    { href: "#newsletter", text: "NEWSLETTER" }
   ];
 </script>
 

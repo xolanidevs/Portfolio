@@ -8,6 +8,7 @@
   import Projects from '$lib/components/Projects.svelte';
   import Upcoming from '$lib/components/Upcoming.svelte';
   import Contact from '$lib/components/Contact.svelte';
+  import NewsletterSubscription from '$lib/components/NewsletterSubscription.svelte';
 </script>
 
   <Hero />
@@ -15,4 +16,5 @@
   <Projects />
   <Upcoming />
   <Contact />
+  <NewsletterSubscription />
 
