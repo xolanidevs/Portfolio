@@ -1,38 +1,38 @@
-<script>
-  let email = '';
-  let message = '';
+<script>  
+    let email = '';
+    let message = '';
 
-  async function handleSubmit(event) {
-    event.preventDefault();
-    try {
-      const response = await fetch('/api/subscribe', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email })
-      });
-      const data = await response.json();
-      message = data.message;
-      if (response.ok) email = '';
-    } catch (error) {
-      message = 'An error occurred. Please try again.';
+    async function handleSubmit(event) {
+      event.preventDefault();
+      const { data, error } = await supabase.from('subscribers').insert([{ email }]);
+
+      if (error) {
+        message = 'There was an issue with your subscription. Try again.';
+        console.error(error);
+      } else {
+        message = 'Thank you for subscribing!';
+      }
     }
-  }
 </script>
 
 <section id="newsletter" class="container">
   <form on:submit={handleSubmit}>
     <div class="text">
       <h2>Subscribe to my newsletters</h2>
-      <p>As an aspiring tech entrepreneur with a passion for thought expression through writing, I love sharing my insights on topics that captivate me such as technology, business, investment, and the deeper essence of living.</p>
+      <p>As an aspiring tech entrepreneur with a passion for thought expression through <a href="https://xolanimthembu.blogspot.com/" target="_blank"><span>writing </span><i class="fa-solid fa-square-arrow-up-right"></i></a>, I love sharing my insights on topics that captivate me such as technology, business, investment, and the deeper essence of living. Subscribe to recieve notification everytime I post.</p>
     </div>
     <div class="middle">
+      <label for="email"></label>
       <input 
-      type="email" 
-      bind:value={email} 
-      placeholder="Enter your email" 
-      required
+        id="email" 
+        type="email" 
+        bind:value={email} 
+        placeholder="Enter your email" 
+        required
+        autocomplete="email"
       />
-      <button type="submit">Subscribe</button>
+      
+      <button type="submit" aria-label="Subscribe to the newsletter">Subscribe</button>
       {#if message}
       <p>{message}</p>
       {/if}
@@ -48,7 +48,7 @@
 
   h2{
     color: var(--primary);
-    margin-bottom: 1rem;
+    margin-bottom: .7rem;
   }
 
   p{
@@ -57,6 +57,18 @@
 
   h2, p{
     text-align: center;
+  }
+  
+  a{
+    color: var(--primary);
+  }
+
+  a:hover{
+    text-decoration: underline;
+  }
+
+  i {
+    font-size: .7rem;
   }
 
   form {
@@ -123,7 +135,4 @@
       font-size: 1.2rem;
     }
   }
-
-
-
 </style>
