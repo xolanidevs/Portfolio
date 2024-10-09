@@ -43,7 +43,8 @@
 <style>
 
   section{
-    margin-top: 5rem;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
   }
 
   h2{
@@ -74,7 +75,7 @@
   form {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .middle{
